@@ -13,4 +13,4 @@ def load_data():
     long = wide.melt(id_vars="date", var_name="ticker", value_name="price")
     return long.sort_values(["ticker", "date"])
 df = load_data()
-st.dataframe(df.head())
+st.dataframe(df.head(1))
